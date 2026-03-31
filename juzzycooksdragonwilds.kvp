@@ -1,0 +1,87 @@
+Meta.DisplayName=RuneScape: Dragonwilds Dedicated Server
+Meta.Description=RuneScape: Dragonwilds dedicated server for AMP on Linux
+Meta.OS=Linux
+Meta.Arch=x86_64
+Meta.Author=juzzycooks
+Meta.URL=https://dragonwilds.runescape.com/
+Meta.DisplayImageSource=steam:1374490
+Meta.EndpointURIFormat=
+Meta.ConfigManifest=juzzycooksdragonwildsconfig.json
+Meta.MetaConfigManifest=juzzycooksdragonwildsmetaconfig.json
+Meta.ConfigRoot=juzzycooksdragonwilds.kvp
+Meta.MinAMPVersion=2.6.0.4
+Meta.DockerRequired=False
+Meta.ContainerPolicy=Supported
+Meta.ContainerPolicyReason=Native Linux dedicated server binary present
+Meta.Prerequisites=[]
+Meta.ExtraContainerPackages=[]
+Meta.ConfigReleaseState=NotSpecified
+Meta.NoCommercialUsage=False
+Meta.ConfigVersion=1.0
+
+Meta.AppConfigId=1c0bc2c3-06b7-42ec-92a0-98d2c894863c
+
+App.DisplayName=RuneScape: Dragonwilds Dedicated Server
+App.RootDir=./
+App.BaseDirectory=./
+App.WorkingDir=./
+App.ExecutableLinux=RSDragonwildsServer.sh
+App.CommandLineArgs={{$PlatformArgs}} {{CustomArgs}}
+App.LinuxCommandLineArgs=
+App.UseLinuxIOREDIR=False
+
+App.AppSettings={"OwnerID":"","ServerName":"Dragonwilds Server","DefaultWorldName":"DragonwildsWorld","AdminPassword":"ChangeMeAdminPassword","WorldPassword":"","MaxPlayers":"6"}
+
+App.EnvironmentVariables={"SteamAppId":"4019830","SteamGameId":"4019830"}
+
+App.CommandLineParameterFormat=-{0}="{1}"
+App.CommandLineParameterDelimiter=
+
+App.ExitMethod=CtrlC
+App.ExitTimeout=30
+App.ExitString=
+App.ExitFile=app_exit.lck
+
+App.HasWriteableConsole=True
+App.HasReadableConsole=True
+App.SupportsLiveSettingsChanges=False
+
+App.ApplicationIPBinding=0.0.0.0
+App.Ports=@IncludeJson[juzzycooksdragonwildsports.json]
+App.AdminPortRef=0
+App.PrimaryApplicationPortRef=GamePort
+
+App.MaxUsers=6
+App.UseRandomAdminPassword=False
+App.RemoteAdminPassword=
+App.AdminMethod=STDIO
+
+App.UpdateSources=@IncludeJson[juzzycooksdragonwildsupdates.json]
+App.Compatibility=None
+App.SteamUpdateAnonymousLogin=False
+App.SteamForceLoginPrompt=False
+App.RapidStartup=False
+
+App.SupportsUniversalSleep=False
+App.WakeupMode=Any
+App.ApplicationReadyMode=RegexMatch
+
+Console.FilterMatchRegex=
+Console.FilterMatchReplacement=
+Console.ThrowawayMessageRegex=
+Console.AppReadyRegex=^.*(DedicatedServer|Game Engine Initialized|Log file open|Listening).*$ 
+Console.UserJoinRegex=
+Console.UserLeaveRegex=
+Console.UserChatRegex=
+Console.UpdateAvailableRegex=
+Console.MetricsRegex=
+Console.SuppressLogAtStart=False
+Console.ActivateLogRegex=
+Console.UserActions={}
+
+Limits.SleepMode=False
+Limits.SleepOnStart=False
+Limits.SleepDelayMinutes=5
+Limits.DozeDelay=2
+Limits.AutoRetryCount=2
+Limits.SleepStartThresholdSeconds=25

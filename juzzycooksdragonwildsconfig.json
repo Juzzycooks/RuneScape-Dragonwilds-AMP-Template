@@ -1,0 +1,74 @@
+[
+  {
+    "DisplayName": "Owner ID",
+    "Description": "Required owner/player ID used by the dedicated server.",
+    "FieldName": "OwnerID",
+    "InputType": "text",
+    "Category": "Server Settings",
+    "IncludeInCommandLine": false,
+    "ParamFieldName": "DedicatedServer.OwnerID",
+    "Hidden": false,
+    "Required": true,
+    "DefaultValue": ""
+  },
+  {
+    "DisplayName": "Server Name",
+    "Description": "The public server name.",
+    "FieldName": "ServerName",
+    "InputType": "text",
+    "Category": "Server Settings",
+    "IncludeInCommandLine": false,
+    "ParamFieldName": "DedicatedServer.ServerName",
+    "Hidden": false,
+    "Required": true,
+    "DefaultValue": "Dragonwilds Server"
+  },
+  {
+    "DisplayName": "Default World Name",
+    "Description": "The world to load or create.",
+    "FieldName": "DefaultWorldName",
+    "InputType": "text",
+    "Category": "Server Settings",
+    "IncludeInCommandLine": false,
+    "ParamFieldName": "DedicatedServer.DefaultWorldName",
+    "Hidden": false,
+    "Required": true,
+    "DefaultValue": "DragonwildsWorld"
+  },
+  {
+    "DisplayName": "Admin Password",
+    "Description": "In-game admin password.",
+    "FieldName": "AdminPassword",
+    "InputType": "password",
+    "Category": "Server Settings",
+    "IncludeInCommandLine": false,
+    "ParamFieldName": "DedicatedServer.AdminPassword",
+    "Hidden": false,
+    "Required": true,
+    "DefaultValue": "ChangeMeAdminPassword"
+  },
+  {
+    "DisplayName": "World Password",
+    "Description": "Optional server join password.",
+    "FieldName": "WorldPassword",
+    "InputType": "password",
+    "Category": "Server Settings",
+    "IncludeInCommandLine": false,
+    "ParamFieldName": "DedicatedServer.WorldPassword",
+    "Hidden": false,
+    "Required": false,
+    "DefaultValue": ""
+  },
+  {
+    "DisplayName": "Max Players",
+    "Description": "Maximum concurrent players.",
+    "FieldName": "MaxPlayers",
+    "InputType": "number",
+    "Category": "Server Settings",
+    "IncludeInCommandLine": false,
+    "ParamFieldName": "DedicatedServer.MaxPlayers",
+    "Hidden": false,
+    "Required": true,
+    "DefaultValue": "6"
+  }
+]

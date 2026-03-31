@@ -1,0 +1,20 @@
+[
+  {
+    "ConfigFile": "{{$FullBaseDir}}RSDragonwilds/Saved/Config/LinuxServer/DedicatedServer.ini",
+    "ConfigType": "ini",
+    "Importable": true,
+    "Mappings": [
+      {
+        "Heading": "DedicatedServer",
+        "SettingMappings": {
+          "OwnerID": "OwnerID",
+          "ServerName": "ServerName",
+          "DefaultWorldName": "DefaultWorldName",
+          "AdminPassword": "AdminPassword",
+          "WorldPassword": "WorldPassword",
+          "MaxPlayers": "MaxPlayers"
+        }
+      }
+    ]
+  }
+]
