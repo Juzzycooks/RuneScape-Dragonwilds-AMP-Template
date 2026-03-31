@@ -17,16 +17,16 @@ Meta.Prerequisites=[]
 Meta.ExtraContainerPackages=[]
 Meta.ConfigReleaseState=NotSpecified
 Meta.NoCommercialUsage=False
-Meta.ConfigVersion=1.0
+Meta.ConfigVersion=1.1
 
-Meta.AppConfigId=1c0bc2c3-06b7-42ec-92a0-98d2c894863c
+Meta.AppConfigId=6f1d16a2-8f22-4fdb-859d-7e8be4e4a5e7
 
 App.DisplayName=RuneScape: Dragonwilds Dedicated Server
 App.RootDir=./
-App.BaseDirectory=./
-App.WorkingDir=./
-App.ExecutableLinux=RSDragonwildsServer.sh
-App.CommandLineArgs={{$PlatformArgs}} {{CustomArgs}}
+App.BaseDirectory=./4019830
+App.WorkingDir=./4019830
+App.ExecutableLinux=/bin/bash
+App.CommandLineArgs=./RSDragonwildsServer.sh {{CustomArgs}}
 App.LinuxCommandLineArgs=
 App.UseLinuxIOREDIR=False
 

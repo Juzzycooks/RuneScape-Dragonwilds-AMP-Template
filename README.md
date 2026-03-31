@@ -1,6 +1,8 @@
 # RuneScape: Dragonwilds AMP Template
 
-Files included:
+This revision assumes AMP installs the dedicated server into the `4019830` subfolder.
+
+## Files included
 
 - manifest.json
 - juzzycooksdragonwilds.kvp
@@ -8,6 +10,14 @@ Files included:
 - juzzycooksdragonwildsmetaconfig.json
 - juzzycooksdragonwildsports.json
 - juzzycooksdragonwildsupdates.json
+
+## Important changes in this revision
+
+- Base directory changed to `./4019830`
+- Working directory changed to `./4019830`
+- Executable changed to `/bin/bash`
+- Launch command changed to `./RSDragonwildsServer.sh {{CustomArgs}}`
+- Metaconfig path changed to `4019830/RSDragonwilds/Saved/Config/LinuxServer/DedicatedServer.ini`
 
 ## Add to AMP
 
@@ -23,4 +33,7 @@ Files included:
 - This template is for the native Linux dedicated server.
 - Steam anonymous updates are disabled.
 - Change the default admin password after deployment.
-- If the wrapper script does not launch directly, switch the executable to `/bin/bash` and pass `./RSDragonwildsServer.sh` as the command line.
+- If startup still fails, check that these files exist:
+  - `4019830/RSDragonwildsServer.sh`
+  - `4019830/RSDragonwilds/Binaries/Linux/RSDragonwildsServer-Linux-Shipping`
+- If needed, ensure both are executable with `chmod +x`.

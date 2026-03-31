@@ -1,6 +1,6 @@
 [
   {
-    "ConfigFile": "{{$FullBaseDir}}RSDragonwilds/Saved/Config/LinuxServer/DedicatedServer.ini",
+    "ConfigFile": "{{$FullBaseDir}}4019830/RSDragonwilds/Saved/Config/LinuxServer/DedicatedServer.ini",
     "ConfigType": "ini",
     "Importable": true,
     "Mappings": [
