@@ -5,7 +5,7 @@
     "Importable": true,
     "Mappings": [
       {
-        "Heading": "DedicatedServer",
+        "Heading": "/Script/Dominion.DedicatedServerSettings",
         "SettingMappings": {
           "OwnerID": "OwnerID",
           "ServerName": "ServerName",

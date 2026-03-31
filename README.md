@@ -1,6 +1,6 @@
 # RuneScape: Dragonwilds AMP Template
 
-This revision assumes AMP installs the dedicated server into the `4019830` subfolder.
+This revision removes CustomArgs from startup and updates the metaconfig heading to use the Unreal config section seen in the live logs.
 
 ## Files included
 
@@ -13,11 +13,10 @@ This revision assumes AMP installs the dedicated server into the `4019830` subfo
 
 ## Important changes in this revision
 
-- Base directory changed to `./4019830`
-- Working directory changed to `./4019830`
-- Executable changed to `/bin/bash`
-- Launch command changed to `./RSDragonwildsServer.sh {{CustomArgs}}`
-- Metaconfig path changed to `4019830/RSDragonwilds/Saved/Config/LinuxServer/DedicatedServer.ini`
+- Launch command changed to `./RSDragonwildsServer.sh`
+- Ready regex tightened around confirmed runtime log lines
+- Metaconfig heading changed to `/Script/Dominion.DedicatedServerSettings`
+- ParamFieldName values updated to match the Unreal settings section
 
 ## Add to AMP
 
@@ -33,7 +32,4 @@ This revision assumes AMP installs the dedicated server into the `4019830` subfo
 - This template is for the native Linux dedicated server.
 - Steam anonymous updates are disabled.
 - Change the default admin password after deployment.
-- If startup still fails, check that these files exist:
-  - `4019830/RSDragonwildsServer.sh`
-  - `4019830/RSDragonwilds/Binaries/Linux/RSDragonwildsServer-Linux-Shipping`
-- If needed, ensure both are executable with `chmod +x`.
+- After creating the instance, save the instance settings so AMP writes DedicatedServer.ini.

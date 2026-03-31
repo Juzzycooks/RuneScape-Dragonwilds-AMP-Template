@@ -17,16 +17,16 @@ Meta.Prerequisites=[]
 Meta.ExtraContainerPackages=[]
 Meta.ConfigReleaseState=NotSpecified
 Meta.NoCommercialUsage=False
-Meta.ConfigVersion=1.1
+Meta.ConfigVersion=1.2
 
-Meta.AppConfigId=6f1d16a2-8f22-4fdb-859d-7e8be4e4a5e7
+Meta.AppConfigId=8a2f9d4b-8f6a-4f89-aeb3-df80d4592f64
 
 App.DisplayName=RuneScape: Dragonwilds Dedicated Server
 App.RootDir=./
 App.BaseDirectory=./4019830
 App.WorkingDir=./4019830
 App.ExecutableLinux=/bin/bash
-App.CommandLineArgs=./RSDragonwildsServer.sh {{CustomArgs}}
+App.CommandLineArgs=./RSDragonwildsServer.sh
 App.LinuxCommandLineArgs=
 App.UseLinuxIOREDIR=False
 
@@ -69,7 +69,7 @@ App.ApplicationReadyMode=RegexMatch
 Console.FilterMatchRegex=
 Console.FilterMatchReplacement=
 Console.ThrowawayMessageRegex=
-Console.AppReadyRegex=^.*(DedicatedServer|Game Engine Initialized|Log file open|Listening).*$ 
+Console.AppReadyRegex=^.*(Game Engine Initialized|IpNetDriver listening on port 7777|InitListen completed successfully|Created socket for bind address: 0\.0\.0\.0:7777).*$ 
 Console.UserJoinRegex=
 Console.UserLeaveRegex=
 Console.UserChatRegex=

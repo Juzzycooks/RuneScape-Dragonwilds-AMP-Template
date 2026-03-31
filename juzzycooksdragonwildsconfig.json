@@ -6,7 +6,7 @@
     "InputType": "text",
     "Category": "Server Settings",
     "IncludeInCommandLine": false,
-    "ParamFieldName": "DedicatedServer.OwnerID",
+    "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.OwnerID",
     "Hidden": false,
     "Required": true,
     "DefaultValue": ""
@@ -18,7 +18,7 @@
     "InputType": "text",
     "Category": "Server Settings",
     "IncludeInCommandLine": false,
-    "ParamFieldName": "DedicatedServer.ServerName",
+    "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.ServerName",
     "Hidden": false,
     "Required": true,
     "DefaultValue": "Dragonwilds Server"
@@ -30,7 +30,7 @@
     "InputType": "text",
     "Category": "Server Settings",
     "IncludeInCommandLine": false,
-    "ParamFieldName": "DedicatedServer.DefaultWorldName",
+    "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.DefaultWorldName",
     "Hidden": false,
     "Required": true,
     "DefaultValue": "DragonwildsWorld"
@@ -42,7 +42,7 @@
     "InputType": "password",
     "Category": "Server Settings",
     "IncludeInCommandLine": false,
-    "ParamFieldName": "DedicatedServer.AdminPassword",
+    "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.AdminPassword",
     "Hidden": false,
     "Required": true,
     "DefaultValue": "ChangeMeAdminPassword"
@@ -54,7 +54,7 @@
     "InputType": "password",
     "Category": "Server Settings",
     "IncludeInCommandLine": false,
-    "ParamFieldName": "DedicatedServer.WorldPassword",
+    "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.WorldPassword",
     "Hidden": false,
     "Required": false,
     "DefaultValue": ""
@@ -66,7 +66,7 @@
     "InputType": "number",
     "Category": "Server Settings",
     "IncludeInCommandLine": false,
-    "ParamFieldName": "DedicatedServer.MaxPlayers",
+    "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.MaxPlayers",
     "Hidden": false,
     "Required": true,
     "DefaultValue": "6"
