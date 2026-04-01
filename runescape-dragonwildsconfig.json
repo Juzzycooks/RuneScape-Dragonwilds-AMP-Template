@@ -1,5 +1,17 @@
 [
     {
+        "DisplayName": "Owner ID",
+        "Description": "Your RuneScape: Dragonwilds Player ID. Found in-game at the bottom of the Settings Menu. The server WILL NOT START without this.",
+        "FieldName": "OwnerId",
+        "InputType": "text",
+        "Category": "Server Settings:dns",
+        "Subcategory": "General:settings:1",
+        "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.OwnerId",
+        "IncludeInCommandLine": false,
+        "Required": true,
+        "DefaultValue": ""
+    },
+    {
         "DisplayName": "Server Name",
         "Description": "The name of your server as it appears in the server browser.",
         "FieldName": "ServerName",
