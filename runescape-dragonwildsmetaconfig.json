@@ -1,0 +1,8 @@
+[
+    {
+        "ConfigFile": "RSDragonwilds/Saved/Config/LinuxServer/DedicatedServer.ini",
+        "AutoMap": true,
+        "Importable": true,
+        "ConfigType": "ini"
+    }
+]

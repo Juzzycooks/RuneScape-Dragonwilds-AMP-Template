@@ -1,0 +1,86 @@
+[
+    {
+        "DisplayName": "Server Name",
+        "Description": "The name of your server as it appears in the server browser.",
+        "FieldName": "ServerName",
+        "InputType": "text",
+        "Category": "Server Settings:dns",
+        "Subcategory": "General:settings:1",
+        "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.ServerName",
+        "IncludeInCommandLine": false,
+        "Required": true,
+        "DefaultValue": "My Dragonwilds Server"
+    },
+    {
+        "DisplayName": "Default World Name",
+        "Description": "The name of the default world created on first startup. This is the visible name in the Worlds browser.",
+        "FieldName": "DefaultWorldName",
+        "InputType": "text",
+        "Category": "Server Settings:dns",
+        "Subcategory": "General:settings:1",
+        "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.DefaultWorldName",
+        "IncludeInCommandLine": false,
+        "Required": true,
+        "DefaultValue": "MyWorld"
+    },
+    {
+        "DisplayName": "Admin Password",
+        "Description": "Password for accessing the Server Management tab in the in-game Pause Menu. Anyone who enters this password becomes an Admin until it is changed.",
+        "FieldName": "AdminPassword",
+        "InputType": "password",
+        "Category": "Server Settings:dns",
+        "Subcategory": "General:settings:1",
+        "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.AdminPassword",
+        "IncludeInCommandLine": false,
+        "Required": true,
+        "DefaultValue": ""
+    },
+    {
+        "DisplayName": "World Password",
+        "Description": "Optional password players must enter to join. Leave empty for an open server. Supersedes any password stored in the world save.",
+        "FieldName": "DefaultWorldPassword",
+        "InputType": "password",
+        "Category": "Server Settings:dns",
+        "Subcategory": "General:settings:1",
+        "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.DefaultWorldPassword",
+        "IncludeInCommandLine": false,
+        "DefaultValue": ""
+    },
+    {
+        "DisplayName": "Administrator List",
+        "Description": "Comma-separated list of Player IDs that are server administrators. Find your Player ID in-game at the bottom of the Settings Menu.",
+        "FieldName": "AdministratorList",
+        "InputType": "text",
+        "Category": "Server Settings:dns",
+        "Subcategory": "General:settings:1",
+        "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.AdministratorList",
+        "IncludeInCommandLine": false,
+        "DefaultValue": ""
+    },
+    {
+        "DisplayName": "Server GUID",
+        "Description": "Unique server identifier. Leave empty to auto-generate.",
+        "FieldName": "ServerGuid",
+        "InputType": "text",
+        "Category": "Server Settings:dns",
+        "Subcategory": "Advanced:build:2",
+        "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.ServerGuid",
+        "IncludeInCommandLine": false,
+        "Hidden": true,
+        "DefaultValue": ""
+    },
+    {
+        "DisplayName": "Max Players",
+        "Description": "Maximum number of concurrent players. Server supports up to 6 players as of v0.11. RAM required: 2GB base + 1GB per player.",
+        "FieldName": "$MaxUsers",
+        "InputType": "number",
+        "Category": "Server Settings:dns",
+        "Subcategory": "General:settings:1",
+        "ParamFieldName": "MaxPlayers",
+        "IncludeInCommandLine": false,
+        "MinValue": "1",
+        "MaxValue": "6",
+        "DefaultValue": "6",
+        "Suffix": "players"
+    }
+]
