@@ -1,0 +1,7 @@
+# Optional wrapper patch if you want to patch the installed RSDragonwildsServer.sh manually:
+#
+# export XDG_RUNTIME_DIR=/tmp/amp-runtime
+# mkdir -p "$XDG_RUNTIME_DIR"
+# chmod 700 "$XDG_RUNTIME_DIR"
+#
+# Then launch the server as normal.

@@ -7,7 +7,7 @@
       {
         "Heading": "/Script/Dominion.DedicatedServerSettings",
         "SettingMappings": {
-          "OwnerID": "OwnerID",
+          "OwnerId": "OwnerId",
           "ServerName": "ServerName",
           "DefaultWorldName": "DefaultWorldName",
           "AdminPassword": "AdminPassword",

@@ -1,6 +1,6 @@
 # RuneScape: Dragonwilds AMP Template
 
-This revision removes CustomArgs from startup and updates the metaconfig heading to use the Unreal config section seen in the live logs.
+This revision adds the Linux runtime environment fix and corrects the OwnerId field name.
 
 ## Files included
 
@@ -10,26 +10,23 @@ This revision removes CustomArgs from startup and updates the metaconfig heading
 - juzzycooksdragonwildsmetaconfig.json
 - juzzycooksdragonwildsports.json
 - juzzycooksdragonwildsupdates.json
+- OPTIONAL_WRAPPER_PATCH.txt
 
 ## Important changes in this revision
 
-- Launch command changed to `./RSDragonwildsServer.sh`
-- Ready regex tightened around confirmed runtime log lines
-- Metaconfig heading changed to `/Script/Dominion.DedicatedServerSettings`
-- ParamFieldName values updated to match the Unreal settings section
+- Added `XDG_RUNTIME_DIR=/tmp/amp-runtime` to environment variables
+- Corrected `OwnerId` casing everywhere
+- Keeps the `4019830` base/working directory fix
+- Keeps the shell-wrapper launch path
 
-## Add to AMP
+## After deploying
 
-1. Put these files in the root of a GitHub repo.
-2. In AMP go to Configuration -> Instance Deployment.
-3. Add the repo in the format `user/repo:branch`.
-4. Click Fetch.
-5. Refresh the browser.
-6. Create a new instance using the template prefix `juzzycooks`.
+Create the runtime directory for the AMP user:
 
-## Notes
+```bash
+mkdir -p /tmp/amp-runtime
+chown amp:amp /tmp/amp-runtime
+chmod 700 /tmp/amp-runtime
+```
 
-- This template is for the native Linux dedicated server.
-- Steam anonymous updates are disabled.
-- Change the default admin password after deployment.
-- After creating the instance, save the instance settings so AMP writes DedicatedServer.ini.
+Then fetch the repo in AMP, create a fresh instance, save the server settings, and start the server.

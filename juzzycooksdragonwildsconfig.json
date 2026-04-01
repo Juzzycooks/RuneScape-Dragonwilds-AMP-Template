@@ -2,11 +2,11 @@
   {
     "DisplayName": "Owner ID",
     "Description": "Required owner/player ID used by the dedicated server.",
-    "FieldName": "OwnerID",
+    "FieldName": "OwnerId",
     "InputType": "text",
     "Category": "Server Settings",
     "IncludeInCommandLine": false,
-    "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.OwnerID",
+    "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.OwnerId",
     "Hidden": false,
     "Required": true,
     "DefaultValue": ""
