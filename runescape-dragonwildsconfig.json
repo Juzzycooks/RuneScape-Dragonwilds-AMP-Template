@@ -50,11 +50,11 @@
     {
         "DisplayName": "World Password",
         "Description": "Optional password players must enter to join. Leave empty for an open server. Supersedes any password stored in the world save.",
-        "FieldName": "DefaultWorldPassword",
+        "FieldName": "WorldPassword",
         "InputType": "password",
         "Category": "Server Settings:dns",
         "Subcategory": "General:settings:1",
-        "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.DefaultWorldPassword",
+        "ParamFieldName": "/Script/Dominion.DedicatedServerSettings.WorldPassword",
         "IncludeInCommandLine": false,
         "DefaultValue": ""
     },
