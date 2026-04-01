@@ -1,0 +1,67 @@
+[
+  {
+    "DisplayName": "Owner ID",
+    "Category": "Server Settings",
+    "Description": "Your RuneScape: Dragonwilds Player ID. Found in-game at the bottom of the Settings Menu. The server will NOT start without this.",
+    "FieldName": "OwnerID",
+    "InputType": "text",
+    "ParamFieldName": "/Script/RSDragonwilds.DedicatedServerSettings.OwnerID",
+    "DefaultValue": "",
+    "Placeholder": "Your Player ID here",
+    "EnumValues": {},
+    "Suffix": "",
+    "MaxLength": 100
+  },
+  {
+    "DisplayName": "Server Name",
+    "Category": "Server Settings",
+    "Description": "The name of your server as it appears in the server browser.",
+    "FieldName": "ServerName",
+    "InputType": "text",
+    "ParamFieldName": "/Script/RSDragonwilds.DedicatedServerSettings.ServerName",
+    "DefaultValue": "My Dragonwilds Server",
+    "Placeholder": "My Dragonwilds Server",
+    "EnumValues": {},
+    "Suffix": "",
+    "MaxLength": 100
+  },
+  {
+    "DisplayName": "Default World Name",
+    "Category": "Server Settings",
+    "Description": "The name of the default world created on first startup.",
+    "FieldName": "DefaultWorldName",
+    "InputType": "text",
+    "ParamFieldName": "/Script/RSDragonwilds.DedicatedServerSettings.DefaultWorldName",
+    "DefaultValue": "Ashenfall",
+    "Placeholder": "Ashenfall",
+    "EnumValues": {},
+    "Suffix": "",
+    "MaxLength": 100
+  },
+  {
+    "DisplayName": "Admin Password",
+    "Category": "Server Settings",
+    "Description": "Anyone with this password can enter Server Management via the in-game Pause > Settings menu and will be treated as an Admin.",
+    "FieldName": "AdminPassword",
+    "InputType": "password",
+    "ParamFieldName": "/Script/RSDragonwilds.DedicatedServerSettings.AdminPassword",
+    "DefaultValue": "",
+    "Placeholder": "Set a strong admin password",
+    "EnumValues": {},
+    "Suffix": "",
+    "MaxLength": 100
+  },
+  {
+    "DisplayName": "World Password",
+    "Category": "Server Settings",
+    "Description": "Optional. Password required for players to join. Leave blank for a public server.",
+    "FieldName": "WorldPassword",
+    "InputType": "password",
+    "ParamFieldName": "/Script/RSDragonwilds.DedicatedServerSettings.WorldPassword",
+    "DefaultValue": "",
+    "Placeholder": "Leave blank for public",
+    "EnumValues": {},
+    "Suffix": "",
+    "MaxLength": 100
+  }
+]
