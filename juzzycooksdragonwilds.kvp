@@ -1,0 +1,51 @@
+Meta.ConfigManifest=runescape-dragonwildsconfig.json
+Meta.MetaConfigManifest=runescape-dragonwildsmetaconfig.json
+Meta.ConfigRoot=runescape-dragonwilds.kvp
+Meta.MinAMPVersion=2.5.0.0
+Meta.SpecificDockerImage=cubecoders/ampbase:debian
+Meta.DockerRequired=False
+Meta.DockerBaseReadOnly=False
+Meta.ContainerPolicy=Supported
+Meta.ContainerPolicyReason=
+Meta.ExtraSetupStepsURI=
+Meta.Prerequisites=[]
+Meta.ExtraContainerPackages=[]
+Meta.ConfigReleaseState=NotSpecified
+Meta.NoCommercialUsage=False
+Meta.ConfigVersion=1
+Meta.ReleaseNotes=
+Meta.BreakingReleaseNotes=
+Meta.AppConfigId=
+Meta.ImportableExtensions=[]
+Meta.Author=
+Meta.URL=https://store.steampowered.com/app/1374490/RuneScape_Dragonwilds/
+Meta.DisplayImageSource=steam:1374490
+Meta.EndpointURIFormat=steam://connect/{ip}:{$ApplicationPort1}
+Meta.OS=3
+
+App.DisplayName=RuneScape: Dragonwilds
+App.RootDir=./runescape-dragonwilds/
+App.BaseDirectory=./runescape-dragonwilds/4019830/
+App.SteamWorkshopDownloadLocation=
+App.ExecutableWin=4019830\RSDragonwilds\Binaries\Win64\RSDragonwildsServer-Win64-Shipping.exe
+App.ExecutableLinux=4019830/RSDragonwilds/Binaries/Linux/RSDragonwildsServer-Linux-Shipping
+App.WorkingDir=4019830
+App.LinuxCommandLineArgs=-log
+App.WindowsCommandLineArgs=-log -NewConsole
+App.CommandLineArgs={{$FormattedArgs}}
+App.CommandLineParameterFormat=-{0} {1}
+App.AppSettings={}
+App.CommandLineVars={}
+App.ExitMethod=Signal
+App.StopSignal=SIGTERM
+App.BlockShutdownIfPlayerCount=0
+
+App.SmartExcludeExemptions=["*.cfg","*.conf","*.config","*.ini","*.json","*.xml","*.properties","*.kvp","*.yml","*.yaml","*.toml","*.lua"]
+
+App.UpdateSources=[{"UpdateStageName": "SteamCMD RuneScape Dragonwilds Dedicated Server","UpdateSourcePlatform": "All","UpdateSource": "SteamCMD","UpdateSourceData": "4019830","UpdateSourceTarget": "4019830"}]
+
+Console.AppReadyRegex=LogOnline.+?started
+Console.UserJoinRegex=
+Console.UserLeaveRegex=
+Console.UpdateAvailableRegex=
+Console.ThrowawayMessageRegex=
